@@ -1,7 +1,7 @@
 dependencies:
   post:
-    - pip install docker-py
+    - sudo pip install docker-py
 
 test:
   override:
-    - python ./create_containers.py sample_config.json
+    - sudo python ./create_containers.py sample_config.json
