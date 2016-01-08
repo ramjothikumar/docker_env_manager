@@ -1,7 +1,11 @@
+machine:
+  python:
+    version: 2.7.10
+
 dependencies:
   post:
-    - sudo pip install docker-py
+    - sudo pip install flake8
 
 test:
   override:
-    - sudo python ./create_containers.py sample_config.json
+    - ./verify.sh
