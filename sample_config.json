@@ -1,14 +1,9 @@
 {
   "create_containers":{
       "containers":[
-	{"RepoTags": "ubuntu:15.04", "cmds": ["apt-get install -y sudo curl wget tar"]},
-	{"RepoTags": "ubuntu:14.04", "cmds": ["apt-get install -y sudo curl wget tar"]},
-	{"RepoTags": "ubuntu:12.04", "cmds": ["apt-get install -y sudo curl wget tar"]},
-	{"RepoTags": "centos:6", "cmds": ["yum install -y sudo curl wget tar"]},
-	{"RepoTags": "centos:7", "cmds": ["yum install -y sudo curl wget tar"]},
-        {"RepoTags": "ambakshi/amazon-linux:2014.09", "cmds": ["yum install -y sudo curl wget tar"]},
-        {"RepoTags": "ambakshi/amazon-linux:2015.03", "cmds": ["yum install -y sudo curl wget tar"]},
-        {"RepoTags": "ambakshi/amazon-linux:2015.09", "cmds": ["yum install -y sudo curl wget tar"]}
+	{"RepoTags": "ubuntu:15.04", "cmds": ["apt-get install -y wget"]},
+	{"RepoTags": "centos:6", "cmds": ["yum install -y wget"]},
+        {"RepoTags": "ambakshi/amazon-linux:2015.09", "cmds": ["yum install -y wget"]}
        ],
       "mode": "remove_existing"
   }
